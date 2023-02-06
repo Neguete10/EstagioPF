@@ -7,6 +7,7 @@
 from itertools import permutations   
 
 # KMP Algoritmo usado e disponível em https://gist.github.com/m00nlight/daa6786cc503fde12a77
+# Baseado no livro "Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein" - pg. 1002
 # 
 # KMP - Knuth Morris Pratt é um algoritmo clássico para matching de strings
 
