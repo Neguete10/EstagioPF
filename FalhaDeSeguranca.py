@@ -1,14 +1,14 @@
-# OBI2021 - Nivel 3 - Nível Sênior
+# OBI2021 - Nível 3 - Nível Sênior
 #
 # https://olimpiada.ic.unicamp.br/pratique/ps/2021/f3/falha/
 #
-# Solucao e codigo escrito por Henrique Lima
+# Solução e código escrito por Henrique Lima
 
 from itertools import permutations   
 
-# KMP Algoritmo usado e disponivel em https://gist.github.com/m00nlight/daa6786cc503fde12a77
+# KMP Algoritmo usado e disponível em https://gist.github.com/m00nlight/daa6786cc503fde12a77
 # 
-# KMP - Knuth Morris Pratt e um algoritmo classico para matching de strings
+# KMP - Knuth Morris Pratt é um algoritmo clássico para matching de strings
 
 class KMP:
     def partial(self, pattern):
@@ -39,7 +39,7 @@ class KMP:
 
 if __name__ == "__main__":
 
-    # Declaracao de variaveis
+    # Declaração de variáveis
     numUser = 0
     answer = 0
 
@@ -48,16 +48,16 @@ if __name__ == "__main__":
     filename = input()
     file = open("./"+filename, "r")
 
-    # Popular as variaveis com as respectivas linhas
+    # Popular as variáveis com as respectivas linhas
     numUser = int(file.readline())
     passwords = [None for i in range(numUser)]
     for i in range(numUser):
         passwords[i] = file.readline().strip()
 
-    # Invocar biblioteca de permutacoes
+    # Invocar biblioteca de permutações
     perm = permutations(passwords, 2)
     
-    # Invocar funcao Knuth Morris Pratt (String Matching)
+    # Invocar função Knuth Morris Pratt (String Matching)
     kmp = KMP()
     for i in list(perm): 
         if(len(kmp.search(list(i).pop(0), list(i).pop(1))) >= 1):
