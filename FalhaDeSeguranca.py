@@ -1,4 +1,4 @@
-# OBI2021 - Nível 3 - Nível Sênior
+# OBI 2021 - Fase 3 - Nível Sênior
 #
 # https://olimpiada.ic.unicamp.br/pratique/ps/2021/f3/falha/
 #
